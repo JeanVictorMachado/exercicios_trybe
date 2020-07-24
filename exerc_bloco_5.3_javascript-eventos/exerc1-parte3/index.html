@@ -1,0 +1,57 @@
+<! DOCTYPE html>
+<html>
+ <head>
+  <meta charset = "utf-8" />
+  <title> Caminhada por gatos </title>
+ </head>
+ <body>
+  
+  <img class="catWalking" style = "position: absolute;" src = "http://www.anniemation.com/clip_art/images/cat-walk.gif">
+  
+ </body>
+
+ <script>
+
+    const cat = document.querySelector(".catWalking");
+    cat.style.left = '0px';
+
+    function catWalk() {
+    cat.style.left = (parseInt(cat.style.left) + 10) + 'px';
+    }
+    window.setInterval(catWalk, 50);
+
+    var img = document.getElementsByTagName('img')[0];
+    img.style.left = '0px';
+    function catWalk() {
+    var currentLeft = parseInt(img.style.left);
+    img.style.left = (currentLeft + 10) + 'px';
+        if (currentLeft > (window.innerWidth-img.width)) {
+            img.style.left = '0px';
+        }   
+    }
+        window.setInterval(catWalk, 50);
+        
+    var img = document.getElementsByTagName('img')[0];
+    img.style.left = '0px';
+    var walkForwards = true;
+    function catWalk() {
+        var currentLeft = parseInt(img.style.left);
+        
+        if (walkForwards && (currentLeft > (window.innerWidth-img.width))) {
+            walkForwards = false;
+        }
+        if (!walkForwards && (currentLeft <= 0)) {
+            walkForwards = true;
+        }
+        
+        if (walkForwards) {
+            img.style.left = (currentLeft + 10) + 'px';
+        } else {
+            img.style.left = (currentLeft - 10) + 'px';
+        }
+    }
+        window.setInterval(catWalk, 50);
+
+
+ </script>
+</html>
