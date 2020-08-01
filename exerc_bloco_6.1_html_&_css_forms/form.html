@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissão de Palestra - Trybe.</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+    <!-- CABECALHO -->
+    <header class="speaker-form-header">
+        <h1>Submissão de Palestrante</h1>
+        <p><em>Palestre na nossa CornTalks! Pra isso basta preencher o formulário.</em></p>
+    </header>
+
+    <!-- FORMULARIO -->
+    <form action="" method="GET" class="speaker-form">
+
+        <!-- NOME -->
+        <div class="form-row">
+            <label for="full-name">Nome:</label>
+            <input type="text" name="full-name" id="full-name">
+        </div>
+
+        <!-- TIPO DE PSLESTRA -->
+        <class class="line-content">
+            <fieldset class="talk-type-fieldset">
+                <legend>Tipo de Palestra</legend>
+                <input type="radio" name="talk-type" id="talk-tyme-main-stage" value="main-stage">
+                <label for="talk-tyme-main-stage">Palco Principal</label>
+                <input type="radio" name="talk-type" id="talk-tyme-workshop" value="workshop">
+                <label for="talk-tyme-workshop">workshop</label>
+            </fieldset>
+           
+        </class>
+
+        <!-- INFORMACOES DO TAMANHO DA CAMISA -->
+        <div class="line-content">
+            <label for="t-shirt">Tamanho da Camisa</label>
+            <select name="t-shirt" id="t-shirt">
+                <option value="xx"></option>
+                <option value="gg">GG</option>
+                <option value="g">G</option>
+                <option value="m">M</option>
+                <option value="p">P</option>
+                <option value="pp">PP</option>
+            </select>
+        </div>
+
+        <!-- DESCRICAO DA PALESTRA -->
+        <div class="line-content">
+            <label for="abstract">Descrição da palestra</label>
+            <textarea name="abstract" id="abstract"></textarea>
+            <div>Descreva sua palestra em 500 palavras. Seja objetivo!</div>
+        </div>
+
+        <!-- DISPONIBILIDADE -->
+        <div class="line-content">
+            <label for=""></label>
+            <input type="checkbox" name="" id="">      
+            <span>Eu estou disponível na data da apresentação da grandiosa CornTalk.</span>  
+        </div>
+
+         <!-- BOTAO ENVIAR -->
+         <div class="line-content">
+            <button class="button" type="submit">Enviar</button>
+        </div>
+                
+    </form>
+
+
+    
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
