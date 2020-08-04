@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+<body>
+    <header>
+        <h1 id="title" class="title">Formulário Trybe</h1>
+    </header>
+
+    <!-- FORMULARIO -->
+    <form action="" method="GET" acntype="multipart/fotm-data">
+        
+        <!-- NOME -->
+        <div class="field">
+            <label class="title is-6" for="input-name">Nome:</label>
+            <div class="control">
+            <input name="input-name" id="input-name" class="input is-mediun" type="text" required="required"  maxlength="40">
+            </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="field">
+            <label class="title is-6" for="input-email">Email:</label>
+
+            <p class="control has-icons-left has-icons-right">
+              <input name="input-email" id="input-email" class="input" type="email" maxlength="50" required="required">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+        </div>
+
+        <!-- CPF -->
+        <div class="field">
+            <label class="title is-6" for="input-cpf">CPF:</label>
+            <div class="control">
+            <input name="input-cpf" id="input-cpf" class="input is-mediun" type="text" required="required"  maxlength="11" required="required">
+            </div>
+        </div>
+
+        <!-- ENDERECO -->
+        <div class="field">
+            <label class="title is-6" for="input-endereco">Endereço:</label>
+            <div class="control">
+            <input name="input-endereco" id="input-endereco" class="input is-mediun" type="text" required="required"  maxlength="200" required="required">
+            </div>
+        </div>
+
+         <!-- CIDADE -->
+         <div class="field">
+            <label class="title is-6" for="input-cidade">Cidade:</label>
+            <div class="control">
+            <input name="input-cidade" id="input-cidade" class="input is-mediun" type="text" required="required"  maxlength="28" required="required">
+            </div>
+        </div>
+
+        <!-- ESTADO -->
+        <label class="title is-6" for="estado">Estado:</label><br>
+        <div class="select">
+            <select id="estado" required="required">
+              <option></option>
+            </select>
+          </div>
+
+        <!-- CASA / APARTAMENTO -->
+        <div id="radio" class="control" required="required">
+            <label class="radio">
+                <input type="radio" name="answer">
+                Casa
+            </label>
+            <label class="radio">
+                <input type="radio" name="answer">
+                Apartamento    
+            </label>
+        </div>
+
+        <!-- RESUMO DO CURRICULO -->
+        <div class="field">
+            <label class="title is-6" for="resumo">Resumo do Currículo:</label><br>
+            <div class="control">
+                <textarea id="resumo" class="textarea" maxlength="1000"></textarea>
+            </div>
+        </div>
+
+        <!-- CARGO -->
+        <div class="field">
+            <label class="title is-6" for="input-cargo">Cargo:</label>
+            <div class="control">
+            <input name="input-cargo" id="input-cargo" class="input is-mediun" type="text" required="required"  maxlength="40" required="required">
+            </div>
+        </div>
+
+        <!-- DESCRICAO DO CARGO -->
+        <div class="field">
+            <label class="title is-6" for="input-cargo-descricao">Descrição do Cargo:</label>
+            <div class="control">
+            <input name="input-cargo-descricao" id="input-cargo-descricao" class="input is-mediun" type="text" required="required"  maxlength="500" required="required">
+            </div>
+        </div>
+
+        <!-- DATA -->
+        <div class="field">
+            <label class="title is-6" for="input-date">Data de início:</label>
+            <div class="control">
+            <input name="input-date" id="input-date" class="input is-mediun" type="date" required="required" required="required">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <!-- BOTAO ENVIAR -->
+            <button class="button">Enviar</button>
+
+            <!-- BOTAO LIMPAR -->
+            <button class="button">Limpar</button>
+        </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
