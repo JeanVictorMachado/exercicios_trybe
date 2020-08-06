@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/bulma-rtl.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/pikaday.css" />
+
 
 </head>
 <body>
@@ -67,7 +69,7 @@
         <label class="title is-6" for="estado">Estado:</label><br>
         <div class="select">
             <select id="estado" required="required">
-              <option></option>
+    
             </select>
           </div>
 
@@ -109,9 +111,9 @@
 
         <!-- DATA -->
         <div class="field">
-            <label class="title is-6" for="input-date">Data de início:</label>
+            <label class="title is-6" for="datepicker">Data de início:</label>
             <div class="control">
-            <input name="input-date" id="input-date" class="input is-mediun" type="date" required="required" required="required">
+            <input name="input-date" id="datepicker" class="input is-mediun" type="text" required="required" required="required">
             </div>
         </div>
 
@@ -123,10 +125,11 @@
             <button class="button">Limpar</button>
         </div>
 
-
-
-
-
     </form>
+
+    <script src="js/pikaday.js"></script>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
