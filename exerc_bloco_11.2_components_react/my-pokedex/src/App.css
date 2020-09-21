@@ -1,0 +1,12 @@
+.App {
+    text-align: center;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin-top: 40px;
+} 
